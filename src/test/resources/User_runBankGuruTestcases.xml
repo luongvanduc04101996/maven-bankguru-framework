@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Nop Commerce" parallel="false">
+
+<listeners>
+	<listener class-name = "commons.MethodListener" />
+ 	<listener class-name="reportConfig.AllureTestListener" />
+</listeners>
+	
+	<test name="Run on Chrome UI">
+		<parameter name = "browser" value = "chrome_ui"></parameter>
+		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
+		<classes>
+			<class
+				name="com.bankguru.user.Check_Open_Browser_Test" />
+		</classes>
+	</test>
+</suite> 
