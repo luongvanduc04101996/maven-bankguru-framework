@@ -45,6 +45,8 @@ public class BaseTest {
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 			options.setExperimentalOption("useAutomationExtension", false);
+			options.addArguments("--disable-notifications");
+			options.addArguments("--disable-geolocation");
 			driver = new ChromeDriver(options);
 		} else if(browser.equals(BrowserNames.CHROME_HEADLESS)) {
 			WebDriverManager.chromedriver().setup();
@@ -180,7 +182,7 @@ public class BaseTest {
 	protected void deleteAllFileInReportNGScreenShot() {
 		try {
 			String workingDir = System.getProperty("user.dir");
-			String pathFolder = workingDir + "\\allure-json\\";
+			String pathFolder = workingDir + "\\allure-reported\\";
 			File file = new File(pathFolder);
 			File[] listOfFiles = file.listFiles();
 			for (int i = 0; i < listOfFiles.length; i++) {

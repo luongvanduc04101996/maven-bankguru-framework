@@ -1,4 +1,4 @@
-package com.bankguru.user;
+package com.bankguru.customer;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;

@@ -1,0 +1,16 @@
+[INFO ] [2021-07-24 00:58:43,245] Precondition: Click to here link to register
+[INFO ] [2021-07-24 00:58:45,169] Precondition: Input email ID textbox
+[INFO ] [2021-07-24 00:58:45,379] Precondition: Click to submit button
+[INFO ] [2021-07-24 00:58:46,212] Precondition: Get user id to login
+[INFO ] [2021-07-24 00:58:46,282] Precondition: Get password to login
+[INFO ] [2021-07-24 00:58:46,340] Precondition: Open url login page
+[INFO ] [2021-07-24 00:58:47,609] Precondition: Input user ID
+[INFO ] [2021-07-24 00:58:47,760] Precondition: Input password
+[INFO ] [2021-07-24 00:58:47,881] Precondition: Click to login button
+[INFO ] [2021-07-24 00:58:49,712] NewCustomer_01 - Step 01: Click to New Customer page 
+[INFO ] [2021-07-24 00:58:50,161] NewCustomer_01 - Step 02: Input empty to name textbox
+[INFO ] [2021-07-24 00:58:50,288] NewCustomer_01 - Step 03: Press to Tab key
+[INFO ] [2021-07-24 00:58:50,487] NewCustomer_01 - Step 04: Verify message displayed
+[INFO ] [2021-07-24 00:58:50,566]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 00:58:50,730] OS name = windows 10
+[INFO ] [2021-07-24 00:58:51,621] ---------- QUIT BROWSER SUCCESS ----------

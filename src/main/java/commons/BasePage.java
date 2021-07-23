@@ -20,6 +20,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageUIs.BasePageUI;
+
 public class BasePage {
 	public void openPageURL(WebDriver driver, String url) {
 		driver.get(url);
@@ -537,6 +539,18 @@ public class BasePage {
 		}
 		fullPath = fullPath.trim();
 		sendkeyToElement(driver, locator, fullPath);
+	}
+	
+	public void openListPageByName(WebDriver driver, String textNamePage) {
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_LINK_BY_TEXT, textNamePage);
+		waitToAllElementsVisible(driver, locator);
+		clickToElement(driver, locator);
+	}
+	
+	public void inputTextBoxByName(WebDriver driver, String nameAttribute, String value) {
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, nameAttribute);
+		waitToAllElementsVisible(driver, locator);
+		sendkeyToElement(driver, locator, value);
 	}
 
 	private WebDriverWait explicitWait;

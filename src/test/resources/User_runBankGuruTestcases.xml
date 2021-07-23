@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Nop Commerce" parallel="false">
+<suite name="BankGuru" parallel="false">
 
 <listeners>
 	<listener class-name = "commons.MethodListener" />
@@ -11,7 +11,7 @@
 		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
 		<classes>
 			<class
-				name="com.bankguru.user.Check_Open_Browser_Test" />
+				name="com.bankguru.customer.Customer_01_New_Customer" />
 		</classes>
 	</test>
 </suite> 
