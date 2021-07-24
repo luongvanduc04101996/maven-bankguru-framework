@@ -10,8 +10,17 @@
 		<parameter name = "browser" value = "chrome_ui"></parameter>
 		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
 		<classes>
-			<class
-				name="com.bankguru.customer.Customer_01_New_Customer" />
+			<!-- <class name="com.bankguru.customer.Customer_01_New_Customer" /> -->
+			<class name="com.bankguru.customer.Customer_03_Edit_Customer" />
 		</classes>
 	</test>
+	
+<!-- 	<test name="Run on Firefox UI">
+		<parameter name = "browser" value = "firefox_ui"></parameter>
+		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
+		<classes>
+			<class name="com.bankguru.customer.Customer_02_New_Customer" />
+		</classes>
+	</test> -->
+
 </suite> 

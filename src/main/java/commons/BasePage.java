@@ -541,18 +541,24 @@ public class BasePage {
 		sendkeyToElement(driver, locator, fullPath);
 	}
 	
-	public void openListPageByName(WebDriver driver, String textNamePage) {
+	public void openListLinkPageByText(WebDriver driver, String textNamePage) {
 		locator = getDynamicLocator(BasePageUI.DYNAMIC_LINK_BY_TEXT, textNamePage);
 		waitToAllElementsVisible(driver, locator);
 		clickToElement(driver, locator);
 	}
 	
-	public void inputTextBoxByName(WebDriver driver, String nameAttribute, String value) {
+	public void inputTextBoxByNameAttribute(WebDriver driver, String nameAttribute, String value) {
 		locator = getDynamicLocator(BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, nameAttribute);
 		waitToAllElementsVisible(driver, locator);
 		sendkeyToElement(driver, locator, value);
 	}
 
+	public boolean isDisplayedWithTDFieldByText(WebDriver driver, String textName) {
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_TD_BY_TEXT, textName);
+		waitToElementVisible(driver, locator);
+		return isElementDisplayed(driver, locator);
+	}
+	
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor jsExecutor;
 	private WebElement element;
