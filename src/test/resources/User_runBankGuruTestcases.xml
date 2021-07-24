@@ -11,16 +11,42 @@
 		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
 		<classes>
 			<!-- <class name="com.bankguru.customer.Customer_01_New_Customer" /> -->
-			<class name="com.bankguru.customer.Customer_03_Edit_Customer" />
+			<!-- <class name="com.bankguru.customer.Customer_02_New_Customer" /> -->
+			<!-- <class name="com.bankguru.customer.Customer_03_Edit_Customer" /> -->
+			<class name="com.bankguru.customer.Customer_04_Delete_Customer" />
 		</classes>
 	</test>
 	
-<!-- 	<test name="Run on Firefox UI">
+<!-- <test name="Run on Firefox UI">
 		<parameter name = "browser" value = "firefox_ui"></parameter>
 		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
 		<classes>
-			<class name="com.bankguru.customer.Customer_02_New_Customer" />
+			<class name="com.bankguru.customer.Customer_01_New_Customer" /> 
 		</classes>
 	</test> -->
 
+<!-- <test name="Run on Chrome Headless">
+		<parameter name="browser" value="chrome_headless"></parameter>
+		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
+		<classes>
+			<class name="com.bankguru.customer.Customer_01_New_Customer" /> 
+		</classes>
+	</test> -->
+
+<!-- <test name="Run on Firefox Headless">
+		<parameter name = "browser" value = "firefox_headless"></parameter>
+		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
+		<classes>
+			<class name="com.bankguru.customer.Customer_01_New_Customer" /> 
+		</classes>
+	</test> -->
+
+<!-- <test name="Run on Edge">
+		<parameter name = "browser" value = "edge_ui"></parameter>
+		<parameter name = "url" value = "http://demo.guru99.com/v4/"></parameter>
+		<classes>
+			<class name="com.bankguru.customer.Customer_01_New_Customer" /> 
+		</classes>
+	</test> -->
+	
 </suite> 

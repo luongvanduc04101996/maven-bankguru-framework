@@ -14,17 +14,7 @@ import pageObjects.LoginPageObject;
 import pageObjects.ManagerHomePageObject;
 import pageObjects.RegisterPageObject;
 
-
 public class Customer_03_Edit_Customer extends BaseTest {
-	WebDriver driver;
-	RegisterPageObject registerPage;
-	LoginPageObject loginPage;
-	ManagerHomePageObject managerHomePage;
-	CustomerPageObject customerPage;
-	String userIDLogin, passwordLogin, emailRegister, name, address, city, state, pin, phone, email, password, birthDay, customerID, gender;
-	String dayBirth, monthBirth, yearBirth;
-	FakerConfig fakeData;
-
 
 	@Parameters({"browser","url"})
 	@BeforeClass
@@ -33,6 +23,7 @@ public class Customer_03_Edit_Customer extends BaseTest {
 		
 		fakeData = FakerConfig.getFakeData();
 		emailRegister = fakeData.getEmailAddress();
+		
 		name = fakeData.getFirstname() + " " + fakeData.getLastname();
 		address = fakeData.getAddress();
 		city = fakeData.getCityName();
@@ -44,6 +35,13 @@ public class Customer_03_Edit_Customer extends BaseTest {
 		gender = "male";	
 		email = fakeData.getEmailAddress();
 		password = fakeData.getPassword();
+		
+		editEmail = fakeData.getEmailAddress();
+		editAddress = fakeData.getAddress();
+		editCity = fakeData.getCityName();
+		editPhone = "0986485422";
+		editPin = "112255";
+		editState = "Cali";
 		
 		loginPage = PageGeneratorManager.getLoginPage(driver);
 		
@@ -135,7 +133,7 @@ public class Customer_03_Edit_Customer extends BaseTest {
 		customerPage.inputTextBoxByNameAttribute(driver, "cusid", customerID);
 		
 		log.info("Edit_04: Step 02 - Click submit button");
-		customerPage.clickToSubmitButtonAtEditCustomer();
+		customerPage.clickToSubmitButtonAtEditAndDeleteCustomer();
 		
 		log.info("Edit_04: Step 03 - Verify submit successful with customer name displayed");
 		verifyEquals(customerPage.getAttributeValueAtEditCustomer(driver, "Customer Name", "value"), name);
@@ -357,9 +355,55 @@ public class Customer_03_Edit_Customer extends BaseTest {
 		verifyEquals(customerPage.getErrorMessageEmail(), "Email-ID is not valid");
 	}
 	
+	@Test
+	public void Edit_27_Edit_Successful() {
+		log.info("Edit_27 - Step 01: Input to email textbox with value : " + editEmail);
+		customerPage.inputTextBoxByNameAttribute(driver, "emailid", editEmail);
+		
+		log.info("Edit_27 - Step 02: Input to address textbarea with value : " + editAddress);
+		customerPage.inputToAddressArea(editAddress);
+		
+		log.info("Edit_27 - Step 03: Input to state textbox with value : " + editState);
+		customerPage.inputTextBoxByNameAttribute(driver, "state", editState);
+		
+		log.info("Edit_27 - Step 04: Input to city textbox with value : " + editCity);
+		customerPage.inputTextBoxByNameAttribute(driver, "city", editCity);
+		
+		log.info("Edit_27 - Step 05: Input to pin textbox with value : " + editPin);
+		customerPage.inputTextBoxByNameAttribute(driver, "pinno", editPin);
+		
+		log.info("Edit_27 - Step 06: Input to phone textbox with value : " + editPhone);
+		customerPage.inputTextBoxByNameAttribute(driver, "telephoneno", editPhone);
+	
+		log.info("Edit_27 - Step 07: Click submit button");
+		customerPage.clickToSubmitButton();
+		
+		log.info("Edit_27 - Step 08: Verify updated successful");
+		verifyEquals(customerPage.getMessageUpdatedSuccessful(), "Customer details updated Successfully!!!");
+	}
+	
+	@Test
+	public void Edit_28_Verify_Updated_Info_Exactly() {
+		log.info("Edit_28 - Verify all info updated successful");
+		verifyEquals(customerPage.getTextAtUpdatedCustomer(driver, "Address"), editAddress);
+		verifyEquals(customerPage.getTextAtUpdatedCustomer(driver, "City"), editCity);
+		verifyEquals(customerPage.getTextAtUpdatedCustomer(driver, "State"), editState);
+		verifyEquals(customerPage.getTextAtUpdatedCustomer(driver, "Pin"), editPin);
+		verifyEquals(customerPage.getTextAtUpdatedCustomer(driver, "Mobile No."), editPhone);
+		verifyEquals(customerPage.getTextAtUpdatedCustomer(driver, "Email"), editEmail);
+	}
 	@AfterClass (alwaysRun = true)
 	public void afterClass() {
 		closeBrowserAndDriver(driver);
 	}
+
+	WebDriver driver;
+	RegisterPageObject registerPage;
+	LoginPageObject loginPage;
+	ManagerHomePageObject managerHomePage;
+	CustomerPageObject customerPage;
+	String userIDLogin, passwordLogin, emailRegister, name, address, city, state, pin, phone, email, password, birthDay, customerID, gender;
+	String dayBirth, monthBirth, yearBirth, editEmail, editAddress, editCity, editState, editPin, editPhone;
+	FakerConfig fakeData;
 
 }

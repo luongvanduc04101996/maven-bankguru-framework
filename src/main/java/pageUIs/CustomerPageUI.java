@@ -29,6 +29,7 @@ public class CustomerPageUI {
 	public static final String GENDER_FEMALE_RADIO = "//input[@value='f']";
 	
 	public static final String CUSTOMER_REGISTERED_SUCCESSFUL_MESSAGE = "//p[text()='Customer Registered Successfully!!!']";
+	public static final String CUSTOMER_UPDATED_SUCCESSFUL_MESSAGE = "//p[@class='heading3']";
 	
 	public static final String CUSTOMER_ID_TEXTBOX = "//input[@name='cusid']";
 	

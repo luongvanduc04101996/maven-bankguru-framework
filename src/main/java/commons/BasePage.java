@@ -558,11 +558,17 @@ public class BasePage {
 		waitToElementVisible(driver, locator);
 		return isElementDisplayed(driver, locator);
 	}
-
+	
 	public String getAttributeValueAtEditCustomer(WebDriver driver, String textName, String attribute) {
 		locator = getDynamicLocator(BasePageUI.DYNAMIC_GET_ATTRIBUTE_VALUE_AT_EDIT_CUSTOMER, textName);
 		waitToElementVisible(driver, locator);
 		return getElementAttribute(driver, locator, attribute);
+	}
+
+	public String getTextAtUpdatedCustomer(WebDriver driver, String textName) {
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_GET_TEXT_AT_UPDATED_CUSTOMER, textName);
+		waitToElementVisible(driver, locator);
+		return getElementText(driver, locator);
 	}
 	
 	private WebDriverWait explicitWait;

@@ -124,9 +124,13 @@ public class CustomerPageObject extends BasePage{
 		waitToElementVisible(driver, CustomerPageUI.CUSTOMER_ID_VALUE);
 		return getElementText(driver, CustomerPageUI.CUSTOMER_ID_VALUE);
 	}
-	public void clickToSubmitButtonAtEditCustomer() {
+	public void clickToSubmitButtonAtEditAndDeleteCustomer() {
 		waitToElementClickAble(driver, CustomerPageUI.SUBMIT_BUTTON_AT_EDIT_CUSTOMER);
 		clickToElement(driver, CustomerPageUI.SUBMIT_BUTTON_AT_EDIT_CUSTOMER);
+	}
+	public String getMessageUpdatedSuccessful() {
+		waitToElementVisible(driver, CustomerPageUI.CUSTOMER_UPDATED_SUCCESSFUL_MESSAGE);
+		return getElementText(driver, CustomerPageUI.CUSTOMER_UPDATED_SUCCESSFUL_MESSAGE);
 	}
 
 }
