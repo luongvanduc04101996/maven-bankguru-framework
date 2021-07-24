@@ -52,6 +52,11 @@ public class CustomerPageObject extends BasePage{
 		sendKeyBoardToElement(driver, CustomerPageUI.PASSWORD_TEXTBOX, Keys.TAB);	
 	}
 	
+	public void pressTabKeyAtCustomerIDTextbox() {
+		waitToElementVisible(driver, CustomerPageUI.CUSTOMER_ID_TEXTBOX);
+		sendKeyBoardToElement(driver, CustomerPageUI.CUSTOMER_ID_TEXTBOX, Keys.TAB);	
+	}
+	
 	public void inputToAddressArea(String value) {
 		waitToElementVisible(driver, CustomerPageUI.ADDRESS_TEXT_AREA);
 		sendkeyToElement(driver, CustomerPageUI.ADDRESS_TEXT_AREA, value);
@@ -91,11 +96,17 @@ public class CustomerPageObject extends BasePage{
 		waitToElementVisible(driver, CustomerPageUI.MESSAGE_EMAIL_TEXTBOX);
 		return getElementText(driver, CustomerPageUI.MESSAGE_EMAIL_TEXTBOX);
 	}
-
+	
 	public String getErrorMessagePassword() {
 		waitToElementVisible(driver, CustomerPageUI.MESSAGE_PASSWORD_TEXTBOX);
 		return getElementText(driver, CustomerPageUI.MESSAGE_PASSWORD_TEXTBOX);
 	}
+
+	public String getErrorMessageCustomerID() {
+		waitToElementVisible(driver, CustomerPageUI.MESSAGE_CUSTOMER_ID_TEXTBOX);
+		return getElementText(driver, CustomerPageUI.MESSAGE_CUSTOMER_ID_TEXTBOX);
+	}
+	
 	public void selectGenderMaleRadio() {
 		waitToElementVisible(driver, CustomerPageUI.GENDER_MALE_RADIO);
 		checkToCheckBoxOrRadio(driver, CustomerPageUI.GENDER_MALE_RADIO);
@@ -108,6 +119,14 @@ public class CustomerPageObject extends BasePage{
 	public String getCustomerRegisterSuccessfulMessage() {
 		waitToElementVisible(driver, CustomerPageUI.CUSTOMER_REGISTERED_SUCCESSFUL_MESSAGE);
 		return getElementText(driver, CustomerPageUI.CUSTOMER_REGISTERED_SUCCESSFUL_MESSAGE);
+	}
+	public String getRegisteredCustomerID() {
+		waitToElementVisible(driver, CustomerPageUI.CUSTOMER_ID_VALUE);
+		return getElementText(driver, CustomerPageUI.CUSTOMER_ID_VALUE);
+	}
+	public void clickToSubmitButtonAtEditCustomer() {
+		waitToElementClickAble(driver, CustomerPageUI.SUBMIT_BUTTON_AT_EDIT_CUSTOMER);
+		clickToElement(driver, CustomerPageUI.SUBMIT_BUTTON_AT_EDIT_CUSTOMER);
 	}
 
 }

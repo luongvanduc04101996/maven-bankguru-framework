@@ -531,3 +531,281 @@
 [INFO ] [2021-07-24 17:47:32,668]  -------------------------- PASSED -------------------------- 
 [INFO ] [2021-07-24 17:47:32,956] OS name = windows 10
 [INFO ] [2021-07-24 17:47:33,965] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-24 21:24:51,803] Precondition: Click to here link to register
+[INFO ] [2021-07-24 21:24:53,599] Precondition: Input email ID textbox
+[INFO ] [2021-07-24 21:24:53,822] Precondition: Click to submit button
+[INFO ] [2021-07-24 21:24:54,640] Precondition: Get user id to login
+[INFO ] [2021-07-24 21:24:54,715] Precondition: Get password to login
+[INFO ] [2021-07-24 21:24:54,777] Precondition: Open url login page
+[INFO ] [2021-07-24 21:24:56,333] Precondition: Input user ID
+[INFO ] [2021-07-24 21:24:56,495] Precondition: Input password
+[INFO ] [2021-07-24 21:24:56,617] Precondition: Click to login button
+[INFO ] [2021-07-24 21:24:57,845] Precondition: Click to New Customer page
+[INFO ] [2021-07-24 21:24:58,320] Precondition: Create new customer successful
+[INFO ] [2021-07-24 21:25:00,635]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:25:00,801] Edit_01: Step 01 - Open Edit Customer page
+[INFO ] [2021-07-24 21:25:01,442] Edit_01: Step 02 - Input empty to customer id
+[INFO ] [2021-07-24 21:25:01,568] Edit_01: Step 03 - Press tab key
+[INFO ] [2021-07-24 21:25:01,757] Edit_01: Step 04 - Verify error message displayed
+[INFO ] [2021-07-24 21:25:01,809]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:25:01,950] Edit_02: Step 01 - Input not numberic to customer id with value: 123abc
+[INFO ] [2021-07-24 21:25:02,076] Edit_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:25:02,143]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:25:02,174] Edit_03: Step 01 - Input special character to customer id with value: 123abc@
+[INFO ] [2021-07-24 21:25:02,361] Edit_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:25:02,398]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:25:02,403] Edit_04: Step 01 - Input valid customer id with value: 17548
+[INFO ] [2021-07-24 21:25:02,490] Edit_04: Step 02 - Click submit button
+[INFO ] [2021-07-24 21:25:03,241] Edit_04: Step 03 - Verify submit successful with customer name displayed
+[INFO ] [2021-07-24 21:25:03,303]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:25:03,475] Edit_05: Step 01 - Verify customer name
+[INFO ] [2021-07-24 21:25:03,526]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:25:03,527] Edit_05: Step 02 - Verify gender
+[INFO ] [2021-07-24 21:25:03,570]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:25:03,570] Edit_05: Step 03 - Verify date of birth
+[INFO ] [2021-07-24 21:25:03,614]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:25:03,775] OS name = windows 10
+[INFO ] [2021-07-24 21:25:04,615] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-24 21:29:48,813] Precondition: Click to here link to register
+[INFO ] [2021-07-24 21:29:50,696] Precondition: Input email ID textbox
+[INFO ] [2021-07-24 21:29:50,910] Precondition: Click to submit button
+[INFO ] [2021-07-24 21:29:51,785] Precondition: Get user id to login
+[INFO ] [2021-07-24 21:29:51,848] Precondition: Get password to login
+[INFO ] [2021-07-24 21:29:51,903] Precondition: Open url login page
+[INFO ] [2021-07-24 21:29:53,455] Precondition: Input user ID
+[INFO ] [2021-07-24 21:29:53,594] Precondition: Input password
+[INFO ] [2021-07-24 21:29:53,719] Precondition: Click to login button
+[INFO ] [2021-07-24 21:29:54,989] Precondition: Click to New Customer page
+[INFO ] [2021-07-24 21:29:55,502] Precondition: Create new customer successful
+[INFO ] [2021-07-24 21:29:57,936]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:29:58,100] Edit_01: Step 01 - Open Edit Customer page
+[INFO ] [2021-07-24 21:29:58,876] Edit_01: Step 02 - Input empty to customer id
+[INFO ] [2021-07-24 21:29:59,001] Edit_01: Step 03 - Press tab key
+[INFO ] [2021-07-24 21:29:59,192] Edit_01: Step 04 - Verify error message displayed
+[INFO ] [2021-07-24 21:29:59,255]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:29:59,392] Edit_02: Step 01 - Input not numberic to customer id with value: 123abc
+[INFO ] [2021-07-24 21:29:59,531] Edit_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:29:59,579]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:29:59,611] Edit_03: Step 01 - Input special character to customer id with value: 123abc@
+[INFO ] [2021-07-24 21:29:59,747] Edit_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:29:59,796]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:29:59,802] Edit_04: Step 01 - Input valid customer id with value: 54088
+[INFO ] [2021-07-24 21:29:59,972] Edit_04: Step 02 - Click submit button
+[INFO ] [2021-07-24 21:30:00,763] Edit_04: Step 03 - Verify submit successful with customer name displayed
+[INFO ] [2021-07-24 21:30:00,818]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:30:01,000] Edit_05: Step 01 - Verify customer name
+[INFO ] [2021-07-24 21:30:01,056]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:30:01,057] Edit_05: Step 02 - Verify gender
+[INFO ] [2021-07-24 21:30:01,103]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:30:01,103] Edit_05: Step 03 - Verify date of birth
+[INFO ] [2021-07-24 21:30:01,144]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:30:01,270] OS name = windows 10
+[INFO ] [2021-07-24 21:30:02,151] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-24 21:32:51,677] Precondition: Click to here link to register
+[INFO ] [2021-07-24 21:32:53,480] Precondition: Input email ID textbox
+[INFO ] [2021-07-24 21:32:53,728] Precondition: Click to submit button
+[INFO ] [2021-07-24 21:32:54,671] Precondition: Get user id to login
+[INFO ] [2021-07-24 21:32:54,737] Precondition: Get password to login
+[INFO ] [2021-07-24 21:32:54,804] Precondition: Open url login page
+[INFO ] [2021-07-24 21:32:56,187] Precondition: Input user ID
+[INFO ] [2021-07-24 21:32:56,337] Precondition: Input password
+[INFO ] [2021-07-24 21:32:56,472] Precondition: Click to login button
+[INFO ] [2021-07-24 21:32:57,934] Precondition: Click to New Customer page
+[INFO ] [2021-07-24 21:32:58,455] Precondition: Create new customer successful
+[INFO ] [2021-07-24 21:33:00,852]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:33:01,007] Edit_01: Step 01 - Open Edit Customer page
+[INFO ] [2021-07-24 21:33:01,690] Edit_01: Step 02 - Input empty to customer id
+[INFO ] [2021-07-24 21:33:01,816] Edit_01: Step 03 - Press tab key
+[INFO ] [2021-07-24 21:33:02,005] Edit_01: Step 04 - Verify error message displayed
+[INFO ] [2021-07-24 21:33:02,069]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:33:02,207] Edit_02: Step 01 - Input not numberic to customer id with value: 123abc
+[INFO ] [2021-07-24 21:33:02,360] Edit_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:33:02,401]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:33:02,423] Edit_03: Step 01 - Input special character to customer id with value: 123abc@
+[INFO ] [2021-07-24 21:33:02,540] Edit_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:33:02,581]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:33:02,586] Edit_04: Step 01 - Input valid customer id with value: 23661
+[INFO ] [2021-07-24 21:33:02,671] Edit_04: Step 02 - Click submit button
+[INFO ] [2021-07-24 21:33:03,380] Edit_04: Step 03 - Verify submit successful with customer name displayed
+[INFO ] [2021-07-24 21:33:03,437]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:33:03,444] Edit_05: Step 01 - Verify customer name
+[INFO ] [2021-07-24 21:33:03,488]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:33:03,488] Edit_05: Step 02 - Verify gender
+[INFO ] [2021-07-24 21:33:03,527]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:33:03,527] Edit_05: Step 03 - Verify date of birth
+[INFO ] [2021-07-24 21:33:03,563]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:33:03,752] OS name = windows 10
+[INFO ] [2021-07-24 21:33:04,576] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-24 21:38:53,237] Precondition: Click to here link to register
+[INFO ] [2021-07-24 21:38:55,449] Precondition: Input email ID textbox
+[INFO ] [2021-07-24 21:38:55,644] Precondition: Click to submit button
+[INFO ] [2021-07-24 21:38:56,791] Precondition: Get user id to login
+[INFO ] [2021-07-24 21:38:56,862] Precondition: Get password to login
+[INFO ] [2021-07-24 21:38:56,933] Precondition: Open url login page
+[INFO ] [2021-07-24 21:38:58,104] Precondition: Input user ID
+[INFO ] [2021-07-24 21:38:58,249] Precondition: Input password
+[INFO ] [2021-07-24 21:38:58,372] Precondition: Click to login button
+[INFO ] [2021-07-24 21:38:59,941] Precondition: Click to New Customer page
+[INFO ] [2021-07-24 21:39:00,404] Precondition: Create new customer successful
+[INFO ] [2021-07-24 21:39:02,745]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:39:02,908] Edit_01: Step 01 - Open Edit Customer page
+[INFO ] [2021-07-24 21:39:03,578] Edit_01: Step 02 - Input empty to customer id
+[INFO ] [2021-07-24 21:39:03,700] Edit_01: Step 03 - Press tab key
+[INFO ] [2021-07-24 21:39:03,895] Edit_01: Step 04 - Verify error message displayed
+[INFO ] [2021-07-24 21:39:03,965]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:39:04,154] Edit_02: Step 01 - Input not numberic to customer id with value: 123abc
+[INFO ] [2021-07-24 21:39:04,310] Edit_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:39:04,353]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:39:04,377] Edit_03: Step 01 - Input special character to customer id with value: 123abc@
+[INFO ] [2021-07-24 21:39:04,519] Edit_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:39:04,561]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:39:04,567] Edit_04: Step 01 - Input valid customer id with value: 82189
+[INFO ] [2021-07-24 21:39:04,664] Edit_04: Step 02 - Click submit button
+[INFO ] [2021-07-24 21:39:05,409] Edit_04: Step 03 - Verify submit successful with customer name displayed
+[INFO ] [2021-07-24 21:39:05,464]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:39:05,469] Edit_05: Step 01 - Verify customer name
+[INFO ] [2021-07-24 21:39:05,512]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:39:10,513] Edit_05: Step 02 - Verify gender
+[INFO ] [2021-07-24 21:39:10,586]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:39:15,588] Edit_05: Step 03 - Verify date of birth
+[INFO ] [2021-07-24 21:39:15,661]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:39:15,813] OS name = windows 10
+[INFO ] [2021-07-24 21:39:16,613] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-24 21:40:35,654] Precondition: Click to here link to register
+[INFO ] [2021-07-24 21:40:37,303] Precondition: Input email ID textbox
+[INFO ] [2021-07-24 21:40:37,488] Precondition: Click to submit button
+[INFO ] [2021-07-24 21:40:38,340] Precondition: Get user id to login
+[INFO ] [2021-07-24 21:40:38,408] Precondition: Get password to login
+[INFO ] [2021-07-24 21:40:38,469] Precondition: Open url login page
+[INFO ] [2021-07-24 21:40:40,110] Precondition: Input user ID
+[INFO ] [2021-07-24 21:40:40,283] Precondition: Input password
+[INFO ] [2021-07-24 21:40:40,411] Precondition: Click to login button
+[INFO ] [2021-07-24 21:40:41,731] Precondition: Click to New Customer page
+[INFO ] [2021-07-24 21:40:42,332] Precondition: Create new customer successful
+[INFO ] [2021-07-24 21:40:44,792]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:40:44,965] Edit_01: Step 01 - Open Edit Customer page
+[INFO ] [2021-07-24 21:40:45,686] Edit_01: Step 02 - Input empty to customer id
+[INFO ] [2021-07-24 21:40:45,809] Edit_01: Step 03 - Press tab key
+[INFO ] [2021-07-24 21:40:46,016] Edit_01: Step 04 - Verify error message displayed
+[INFO ] [2021-07-24 21:40:46,086]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:40:46,239] Edit_02: Step 01 - Input not numberic to customer id with value: 123abc
+[INFO ] [2021-07-24 21:40:46,361] Edit_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:40:46,402]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:40:46,423] Edit_03: Step 01 - Input special character to customer id with value: 123abc@
+[INFO ] [2021-07-24 21:40:46,563] Edit_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:40:46,603]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:40:46,609] Edit_04: Step 01 - Input valid customer id with value: 41799
+[INFO ] [2021-07-24 21:40:46,694] Edit_04: Step 02 - Click submit button
+[INFO ] [2021-07-24 21:40:47,456] Edit_04: Step 03 - Verify submit successful with customer name displayed
+[INFO ] [2021-07-24 21:40:47,510]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:40:47,516] Edit_05: Step 01 - Verify customer name
+[INFO ] [2021-07-24 21:40:47,556]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:40:47,556] Edit_05: Step 02 - Verify gender
+[INFO ] [2021-07-24 21:40:47,596]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:40:47,596] Edit_05: Step 03 - Verify date of birth
+[INFO ] [2021-07-24 21:40:47,642]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-07-24 21:40:47,794] OS name = windows 10
+[INFO ] [2021-07-24 21:40:48,618] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-24 21:58:25,953] Precondition: Click to here link to register
+[INFO ] [2021-07-24 21:58:27,642] Precondition: Input email ID textbox
+[INFO ] [2021-07-24 21:58:27,849] Precondition: Click to submit button
+[INFO ] [2021-07-24 21:58:28,783] Precondition: Get user id to login
+[INFO ] [2021-07-24 21:58:28,852] Precondition: Get password to login
+[INFO ] [2021-07-24 21:58:28,908] Precondition: Open url login page
+[INFO ] [2021-07-24 21:58:30,386] Precondition: Input user ID
+[INFO ] [2021-07-24 21:58:30,536] Precondition: Input password
+[INFO ] [2021-07-24 21:58:30,659] Precondition: Click to login button
+[INFO ] [2021-07-24 21:58:32,228] Precondition: Click to New Customer page
+[INFO ] [2021-07-24 21:58:32,723] Precondition: Create new customer successful
+[INFO ] [2021-07-24 21:58:35,073]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:35,234] Edit_01: Step 01 - Open Edit Customer page
+[INFO ] [2021-07-24 21:58:35,968] Edit_01: Step 02 - Input empty to customer id
+[INFO ] [2021-07-24 21:58:36,092] Edit_01: Step 03 - Press tab key
+[INFO ] [2021-07-24 21:58:36,281] Edit_01: Step 04 - Verify error message displayed
+[INFO ] [2021-07-24 21:58:36,342]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:36,499] Edit_02: Step 01 - Input not numberic to customer id with value: 123abc
+[INFO ] [2021-07-24 21:58:36,635] Edit_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:58:36,678]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:36,707] Edit_03: Step 01 - Input special character to customer id with value: 123abc@
+[INFO ] [2021-07-24 21:58:36,886] Edit_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:58:36,933]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:36,939] Edit_04: Step 01 - Input valid customer id with value: 49893
+[INFO ] [2021-07-24 21:58:37,048] Edit_04: Step 02 - Click submit button
+[INFO ] [2021-07-24 21:58:37,765] Edit_04: Step 03 - Verify submit successful with customer name displayed
+[INFO ] [2021-07-24 21:58:37,820]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:37,826] Edit_05: Step 01 - Verify customer name
+[INFO ] [2021-07-24 21:58:37,864]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:37,865] Edit_05: Step 02 - Verify gender
+[INFO ] [2021-07-24 21:58:37,910]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:37,910] Edit_05: Step 03 - Verify date of birth
+[INFO ] [2021-07-24 21:58:37,955]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:37,961] Edit_06 - Step 01: Input blank to city text box
+[INFO ] [2021-07-24 21:58:38,066] Edit_06 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:38,251] Edit_06 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:38,313]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:38,318] Edit_07 - Step 01: Input blank to state text box
+[INFO ] [2021-07-24 21:58:38,421] Edit_07 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:38,606] Edit_07 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:38,668]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:38,673] Edit_08 - Step 01: Input blank to pin text box
+[INFO ] [2021-07-24 21:58:38,800] Edit_08 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:38,973] Edit_08 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:39,036]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:39,052] Edit_09 - Step 01: Input blank to mobile number text box
+[INFO ] [2021-07-24 21:58:39,154] Edit_09 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:39,323] Edit_09 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:39,381]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:39,385] Edit_10 - Step 01: Input blank to email text box
+[INFO ] [2021-07-24 21:58:39,493] Edit_10 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:39,664] Edit_10 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:39,751]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:39,761] Edit_11 - Step 01: Input numeric to city textbox with value : duc123
+[INFO ] [2021-07-24 21:58:39,857] Edit_11 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:39,897]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:39,902] Edit_12 - Step 01: Input special characters to city textbox with value : duc123@!#
+[INFO ] [2021-07-24 21:58:40,005] Edit_12 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,040]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,045] Edit_13 - Step 01: Input first charater is space to city textbox with value :  duc
+[INFO ] [2021-07-24 21:58:40,141] Edit_13 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,178]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,183] Edit_14 - Step 01: Input numeric to state textbox with value : duc123
+[INFO ] [2021-07-24 21:58:40,270] Edit_14 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,304]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,311] Edit_15 - Step 01: Input special characters to state textbox with value : duc123@!#
+[INFO ] [2021-07-24 21:58:40,411] Edit_15 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,446]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,451] Edit_16 - Step 01: Input first charater is space to state textbox with value :  duc
+[INFO ] [2021-07-24 21:58:40,534] Edit_16 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,567]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,718] Edit_17 - Step 01: Input not numberic to pin textbox with value: 123duc
+[INFO ] [2021-07-24 21:58:40,841] Edit_17 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,881]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,885] Edit_18 - Step 01: Input numeric to pin textbox with value : 123
+[INFO ] [2021-07-24 21:58:41,037] Edit_18 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,083]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,092] Edit_19 - Step 01: Input special characters to pin textbox with value : 123@!#
+[INFO ] [2021-07-24 21:58:41,212] Edit_19 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,250]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,254] Edit_20 - Step 01: Input space at first character to pin textbox with value :  123
+[INFO ] [2021-07-24 21:58:41,356] Edit_20 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,392]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,396] Edit_21 - Step 01: Input space to pin textbox with value: 12 45
+[INFO ] [2021-07-24 21:58:41,491] Edit_21 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,529]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,533] Edit_22 - Step 01: Input space at first character to mobile number textbox with value :  123
+[INFO ] [2021-07-24 21:58:41,631] Edit_22 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,670]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,675] Edit_23 - Step 01: Input space to mobile number textbox with value: 12 45
+[INFO ] [2021-07-24 21:58:41,763] Edit_23 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,795]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,799] Edit_24 - Step 01: Input special characters to mobile number textbox with value : 123@!#
+[INFO ] [2021-07-24 21:58:41,904] Edit_24 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,938]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,944] Edit_25 - Step 01: Input invalid format to email textbox with value : duc@gmail
+[INFO ] [2021-07-24 21:58:42,030] Edit_25 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:42,064]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:42,068] Edit_26 - Step 01: Input space to email textbox with value : du c@gmail
+[INFO ] [2021-07-24 21:58:42,160] Edit_26 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:42,193]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:42,197] OS name = windows 10
+[INFO ] [2021-07-24 21:58:43,048] ---------- QUIT BROWSER SUCCESS ----------

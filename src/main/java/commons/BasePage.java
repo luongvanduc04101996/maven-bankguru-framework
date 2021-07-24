@@ -552,11 +552,17 @@ public class BasePage {
 		waitToAllElementsVisible(driver, locator);
 		sendkeyToElement(driver, locator, value);
 	}
-
+	
 	public boolean isDisplayedWithTDFieldByText(WebDriver driver, String textName) {
-		locator = getDynamicLocator(BasePageUI.DYNAMIC_TD_BY_TEXT, textName);
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_TD_BY_TEXT_AT_NEW_CUSTOMER, textName);
 		waitToElementVisible(driver, locator);
 		return isElementDisplayed(driver, locator);
+	}
+
+	public String getAttributeValueAtEditCustomer(WebDriver driver, String textName, String attribute) {
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_GET_ATTRIBUTE_VALUE_AT_EDIT_CUSTOMER, textName);
+		waitToElementVisible(driver, locator);
+		return getElementAttribute(driver, locator, attribute);
 	}
 	
 	private WebDriverWait explicitWait;

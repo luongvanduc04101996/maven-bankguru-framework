@@ -1,14 +1,103 @@
-[INFO ] [2021-07-24 17:47:23,640] Precondition: Click to here link to register
-[INFO ] [2021-07-24 17:47:25,256] Precondition: Input email ID textbox
-[INFO ] [2021-07-24 17:47:25,444] Precondition: Click to submit button
-[INFO ] [2021-07-24 17:47:26,303] Precondition: Get user id to login
-[INFO ] [2021-07-24 17:47:26,382] Precondition: Get password to login
-[INFO ] [2021-07-24 17:47:26,439] Precondition: Open url login page
-[INFO ] [2021-07-24 17:47:27,978] Precondition: Input user ID
-[INFO ] [2021-07-24 17:47:28,143] Precondition: Input password
-[INFO ] [2021-07-24 17:47:28,264] Precondition: Click to login button
-[INFO ] [2021-07-24 17:47:29,772] Precondition: Click to New Customer page
-[INFO ] [2021-07-24 17:47:30,275] Precondition: Create new customer successful
-[INFO ] [2021-07-24 17:47:32,668]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 17:47:32,956] OS name = windows 10
-[INFO ] [2021-07-24 17:47:33,965] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-24 21:58:25,953] Precondition: Click to here link to register
+[INFO ] [2021-07-24 21:58:27,642] Precondition: Input email ID textbox
+[INFO ] [2021-07-24 21:58:27,849] Precondition: Click to submit button
+[INFO ] [2021-07-24 21:58:28,783] Precondition: Get user id to login
+[INFO ] [2021-07-24 21:58:28,852] Precondition: Get password to login
+[INFO ] [2021-07-24 21:58:28,908] Precondition: Open url login page
+[INFO ] [2021-07-24 21:58:30,386] Precondition: Input user ID
+[INFO ] [2021-07-24 21:58:30,536] Precondition: Input password
+[INFO ] [2021-07-24 21:58:30,659] Precondition: Click to login button
+[INFO ] [2021-07-24 21:58:32,228] Precondition: Click to New Customer page
+[INFO ] [2021-07-24 21:58:32,723] Precondition: Create new customer successful
+[INFO ] [2021-07-24 21:58:35,073]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:35,234] Edit_01: Step 01 - Open Edit Customer page
+[INFO ] [2021-07-24 21:58:35,968] Edit_01: Step 02 - Input empty to customer id
+[INFO ] [2021-07-24 21:58:36,092] Edit_01: Step 03 - Press tab key
+[INFO ] [2021-07-24 21:58:36,281] Edit_01: Step 04 - Verify error message displayed
+[INFO ] [2021-07-24 21:58:36,342]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:36,499] Edit_02: Step 01 - Input not numberic to customer id with value: 123abc
+[INFO ] [2021-07-24 21:58:36,635] Edit_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:58:36,678]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:36,707] Edit_03: Step 01 - Input special character to customer id with value: 123abc@
+[INFO ] [2021-07-24 21:58:36,886] Edit_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-24 21:58:36,933]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:36,939] Edit_04: Step 01 - Input valid customer id with value: 49893
+[INFO ] [2021-07-24 21:58:37,048] Edit_04: Step 02 - Click submit button
+[INFO ] [2021-07-24 21:58:37,765] Edit_04: Step 03 - Verify submit successful with customer name displayed
+[INFO ] [2021-07-24 21:58:37,820]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:37,826] Edit_05: Step 01 - Verify customer name
+[INFO ] [2021-07-24 21:58:37,864]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:37,865] Edit_05: Step 02 - Verify gender
+[INFO ] [2021-07-24 21:58:37,910]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:37,910] Edit_05: Step 03 - Verify date of birth
+[INFO ] [2021-07-24 21:58:37,955]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:37,961] Edit_06 - Step 01: Input blank to city text box
+[INFO ] [2021-07-24 21:58:38,066] Edit_06 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:38,251] Edit_06 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:38,313]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:38,318] Edit_07 - Step 01: Input blank to state text box
+[INFO ] [2021-07-24 21:58:38,421] Edit_07 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:38,606] Edit_07 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:38,668]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:38,673] Edit_08 - Step 01: Input blank to pin text box
+[INFO ] [2021-07-24 21:58:38,800] Edit_08 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:38,973] Edit_08 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:39,036]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:39,052] Edit_09 - Step 01: Input blank to mobile number text box
+[INFO ] [2021-07-24 21:58:39,154] Edit_09 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:39,323] Edit_09 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:39,381]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:39,385] Edit_10 - Step 01: Input blank to email text box
+[INFO ] [2021-07-24 21:58:39,493] Edit_10 - Step 02: Press tab key
+[INFO ] [2021-07-24 21:58:39,664] Edit_10 - Step 03: Verify message displayed
+[INFO ] [2021-07-24 21:58:39,751]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:39,761] Edit_11 - Step 01: Input numeric to city textbox with value : duc123
+[INFO ] [2021-07-24 21:58:39,857] Edit_11 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:39,897]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:39,902] Edit_12 - Step 01: Input special characters to city textbox with value : duc123@!#
+[INFO ] [2021-07-24 21:58:40,005] Edit_12 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,040]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,045] Edit_13 - Step 01: Input first charater is space to city textbox with value :  duc
+[INFO ] [2021-07-24 21:58:40,141] Edit_13 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,178]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,183] Edit_14 - Step 01: Input numeric to state textbox with value : duc123
+[INFO ] [2021-07-24 21:58:40,270] Edit_14 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,304]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,311] Edit_15 - Step 01: Input special characters to state textbox with value : duc123@!#
+[INFO ] [2021-07-24 21:58:40,411] Edit_15 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,446]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,451] Edit_16 - Step 01: Input first charater is space to state textbox with value :  duc
+[INFO ] [2021-07-24 21:58:40,534] Edit_16 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,567]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,718] Edit_17 - Step 01: Input not numberic to pin textbox with value: 123duc
+[INFO ] [2021-07-24 21:58:40,841] Edit_17 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:40,881]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:40,885] Edit_18 - Step 01: Input numeric to pin textbox with value : 123
+[INFO ] [2021-07-24 21:58:41,037] Edit_18 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,083]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,092] Edit_19 - Step 01: Input special characters to pin textbox with value : 123@!#
+[INFO ] [2021-07-24 21:58:41,212] Edit_19 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,250]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,254] Edit_20 - Step 01: Input space at first character to pin textbox with value :  123
+[INFO ] [2021-07-24 21:58:41,356] Edit_20 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,392]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,396] Edit_21 - Step 01: Input space to pin textbox with value: 12 45
+[INFO ] [2021-07-24 21:58:41,491] Edit_21 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,529]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,533] Edit_22 - Step 01: Input space at first character to mobile number textbox with value :  123
+[INFO ] [2021-07-24 21:58:41,631] Edit_22 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,670]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,675] Edit_23 - Step 01: Input space to mobile number textbox with value: 12 45
+[INFO ] [2021-07-24 21:58:41,763] Edit_23 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,795]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,799] Edit_24 - Step 01: Input special characters to mobile number textbox with value : 123@!#
+[INFO ] [2021-07-24 21:58:41,904] Edit_24 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:41,938]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:41,944] Edit_25 - Step 01: Input invalid format to email textbox with value : duc@gmail
+[INFO ] [2021-07-24 21:58:42,030] Edit_25 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:42,064]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:42,068] Edit_26 - Step 01: Input space to email textbox with value : du c@gmail
+[INFO ] [2021-07-24 21:58:42,160] Edit_26 - Step 02: Verify message displayed
+[INFO ] [2021-07-24 21:58:42,193]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-24 21:58:42,197] OS name = windows 10
+[INFO ] [2021-07-24 21:58:43,048] ---------- QUIT BROWSER SUCCESS ----------
