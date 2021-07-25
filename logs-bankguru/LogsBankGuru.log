@@ -1422,3 +1422,95 @@
 [INFO ] [2021-07-25 21:42:15,767]  -------------------------- PASSED -------------------------- 
 [INFO ] [2021-07-25 21:42:15,774] OS name = windows 10
 [INFO ] [2021-07-25 21:42:16,591] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-25 22:51:25,519] Precondition: Click to here link to register
+[INFO ] [2021-07-25 22:51:27,400] Precondition: Input email ID textbox
+[INFO ] [2021-07-25 22:51:27,613] Precondition: Click to submit button
+[INFO ] [2021-07-25 22:51:28,530] Precondition: Get user id to login
+[INFO ] [2021-07-25 22:51:28,599] Precondition: Get password to login
+[INFO ] [2021-07-25 22:51:28,652] Precondition: Open url login page
+[INFO ] [2021-07-25 22:51:29,818] Precondition: Input user ID
+[INFO ] [2021-07-25 22:51:29,960] Precondition: Input password
+[INFO ] [2021-07-25 22:51:30,081] Precondition: Click to login button
+[INFO ] [2021-07-25 22:51:31,412] Precondition: Click to New Customer page
+[INFO ] [2021-07-25 22:51:31,929] Precondition: Create new customer successful
+[INFO ] [2021-07-25 22:51:33,658] OS name = windows 10
+[INFO ] [2021-07-25 22:51:34,483] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-25 22:53:21,793] Precondition: Click to here link to register
+[INFO ] [2021-07-25 22:53:23,416] Precondition: Input email ID textbox
+[INFO ] [2021-07-25 22:53:23,627] Precondition: Click to submit button
+[INFO ] [2021-07-25 22:53:24,497] Precondition: Get user id to login
+[INFO ] [2021-07-25 22:53:24,575] Precondition: Get password to login
+[INFO ] [2021-07-25 22:53:24,631] Precondition: Open url login page
+[INFO ] [2021-07-25 22:53:26,177] Precondition: Input user ID
+[INFO ] [2021-07-25 22:53:26,325] Precondition: Input password
+[INFO ] [2021-07-25 22:53:26,447] Precondition: Click to login button
+[INFO ] [2021-07-25 22:53:28,017] Precondition: Click to New Customer page
+[INFO ] [2021-07-25 22:53:28,508] Precondition: Create new customer successful
+[INFO ] [2021-07-25 22:53:31,096]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 22:53:31,096] Precondition: Get customer ID
+[INFO ] [2021-07-25 22:53:31,146] Precondition: Go to New Account page
+[INFO ] [2021-07-25 22:53:31,562] Precondition: Create new account successful with customerID = 67100
+[INFO ] [2021-07-25 22:53:32,895]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 22:53:32,895] Precondition: Get account ID
+[INFO ] [2021-07-25 22:53:32,942] Precondition: Open Edit Account page
+[INFO ] [2021-07-25 22:53:33,789] MiniState_01: Step 01 - Input empty to AccountNo
+[INFO ] [2021-07-25 22:53:33,898] MiniState_01: Step 02 - Press tab key
+[INFO ] [2021-07-25 22:53:34,106] MiniState_01: Step 03 - Verify error message displayed
+[INFO ] [2021-07-25 22:53:34,167]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 22:53:34,314] MiniState_02: Step 01 - Input not numberic to AccountNo with value: 123abc
+[INFO ] [2021-07-25 22:53:34,421] MiniState_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 22:53:34,461]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 22:53:34,486] MiniState_03: Step 01 - Input special character to AccountNo with value: 123abc@
+[INFO ] [2021-07-25 22:53:34,593] MiniState_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 22:53:34,631]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 22:53:34,637] MiniState_04: Step 01 - Input space to AccountNo with value: 1 2 3
+[INFO ] [2021-07-25 22:53:34,732] MiniState_04: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 22:53:34,773]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 22:53:34,778] OS name = windows 10
+[INFO ] [2021-07-25 22:53:35,665] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-25 23:02:53,136] Precondition: Click to here link to register
+[INFO ] [2021-07-25 23:02:54,797] Precondition: Input email ID textbox
+[INFO ] [2021-07-25 23:02:55,056] Precondition: Click to submit button
+[INFO ] [2021-07-25 23:02:55,940] Precondition: Get user id to login
+[INFO ] [2021-07-25 23:02:56,004] Precondition: Get password to login
+[INFO ] [2021-07-25 23:02:56,058] Precondition: Open url login page
+[INFO ] [2021-07-25 23:02:57,552] Precondition: Input user ID
+[INFO ] [2021-07-25 23:02:57,694] Precondition: Input password
+[INFO ] [2021-07-25 23:02:57,829] Precondition: Click to login button
+[INFO ] [2021-07-25 23:02:59,109] Precondition: Click to New Customer page
+[INFO ] [2021-07-25 23:02:59,606] Precondition: Create new customer successful
+[INFO ] [2021-07-25 23:03:01,697] OS name = windows 10
+[INFO ] [2021-07-25 23:03:02,731] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-25 23:03:33,147] Precondition: Click to here link to register
+[INFO ] [2021-07-25 23:03:35,000] Precondition: Input email ID textbox
+[INFO ] [2021-07-25 23:03:35,237] Precondition: Click to submit button
+[INFO ] [2021-07-25 23:03:36,059] Precondition: Get user id to login
+[INFO ] [2021-07-25 23:03:36,128] Precondition: Get password to login
+[INFO ] [2021-07-25 23:03:36,183] Precondition: Open url login page
+[INFO ] [2021-07-25 23:03:37,565] Precondition: Input user ID
+[INFO ] [2021-07-25 23:03:37,697] Precondition: Input password
+[INFO ] [2021-07-25 23:03:37,834] Precondition: Click to login button
+[INFO ] [2021-07-25 23:03:39,143] Precondition: Click to New Customer page
+[INFO ] [2021-07-25 23:03:39,668] Precondition: Create new customer successful
+[INFO ] [2021-07-25 23:03:42,416]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:42,416] Precondition: Get customer ID
+[INFO ] [2021-07-25 23:03:42,464] Precondition: Go to New Account page
+[INFO ] [2021-07-25 23:03:42,892] Precondition: Create new account successful with customerID = 55274
+[INFO ] [2021-07-25 23:03:44,308]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:44,308] Precondition: Get account ID
+[INFO ] [2021-07-25 23:03:44,356] Precondition: Open Edit Account page
+[INFO ] [2021-07-25 23:03:45,163] MiniState_01: Step 01 - Input empty to AccountNo
+[INFO ] [2021-07-25 23:03:45,285] MiniState_01: Step 02 - Press tab key
+[INFO ] [2021-07-25 23:03:45,496] MiniState_01: Step 03 - Verify error message displayed
+[INFO ] [2021-07-25 23:03:45,570]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:45,720] MiniState_02: Step 01 - Input not numberic to AccountNo with value: 123abc
+[INFO ] [2021-07-25 23:03:45,829] MiniState_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 23:03:45,867]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:45,888] MiniState_03: Step 01 - Input special character to AccountNo with value: 123abc@
+[INFO ] [2021-07-25 23:03:46,010] MiniState_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 23:03:46,050]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:46,056] MiniState_04: Step 01 - Input space to AccountNo with value: 1 2 3
+[INFO ] [2021-07-25 23:03:46,164] MiniState_04: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 23:03:46,199]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:46,203] OS name = windows 10
+[INFO ] [2021-07-25 23:03:47,009] ---------- QUIT BROWSER SUCCESS ----------

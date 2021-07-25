@@ -16,7 +16,8 @@
 			<!-- <class name="com.bankguru.customer.Customer_04_Delete_Customer" /> -->
 			<!-- <class name="com.bankguru.customer.Customer_05_New_Account" /> -->
 			<!-- <class name="com.bankguru.customer.Customer_06_Edit_Account" /> -->
-			<class name="com.bankguru.customer.Customer_07_Delete_Account" />
+			<!-- <class name="com.bankguru.customer.Customer_07_Delete_Account" /> -->
+			<class name="com.bankguru.customer.Customer_08_Mini_Statement_Form" />
 		</classes>
 	</test>
 	

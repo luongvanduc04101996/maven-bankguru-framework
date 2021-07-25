@@ -1,40 +1,33 @@
-[INFO ] [2021-07-25 21:42:01,523] Precondition: Click to here link to register
-[INFO ] [2021-07-25 21:42:03,423] Precondition: Input email ID textbox
-[INFO ] [2021-07-25 21:42:03,617] Precondition: Click to submit button
-[INFO ] [2021-07-25 21:42:04,462] Precondition: Get user id to login
-[INFO ] [2021-07-25 21:42:04,547] Precondition: Get password to login
-[INFO ] [2021-07-25 21:42:04,601] Precondition: Open url login page
-[INFO ] [2021-07-25 21:42:05,751] Precondition: Input user ID
-[INFO ] [2021-07-25 21:42:05,888] Precondition: Input password
-[INFO ] [2021-07-25 21:42:06,014] Precondition: Click to login button
-[INFO ] [2021-07-25 21:42:07,331] Precondition: Click to New Customer page
-[INFO ] [2021-07-25 21:42:07,847] Precondition: Create new customer successful
-[INFO ] [2021-07-25 21:42:10,500]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-25 21:42:10,500] Precondition: Get customer ID
-[INFO ] [2021-07-25 21:42:10,549] Precondition: Go to New Account page
-[INFO ] [2021-07-25 21:42:10,996] Precondition: Create new account successful with customerID = 69532
-[INFO ] [2021-07-25 21:42:12,383]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-25 21:42:12,384] Precondition: Get account ID
-[INFO ] [2021-07-25 21:42:12,441] Precondition: Open Edit Account page
-[INFO ] [2021-07-25 21:42:13,316] Delete_01: Step 01 - Input empty to AccountNo
-[INFO ] [2021-07-25 21:42:13,473] Delete_01: Step 02 - Press tab key
-[INFO ] [2021-07-25 21:42:13,673] Delete_01: Step 03 - Verify error message displayed
-[INFO ] [2021-07-25 21:42:13,731]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-25 21:42:13,881] Delete_02: Step 01 - Input not numberic to AccountNo with value: 123abc
-[INFO ] [2021-07-25 21:42:13,993] Delete_02: Step 02 - Verify error message displayed
-[INFO ] [2021-07-25 21:42:14,034]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-25 21:42:14,056] Delete_03: Step 01 - Input special character to AccountNo with value: 123abc@
-[INFO ] [2021-07-25 21:42:14,175] Delete_03: Step 02 - Verify error message displayed
-[INFO ] [2021-07-25 21:42:14,215]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-25 21:42:14,222] Delete_04: Step 01 - Input space to AccountNo with value: 1 2 3
-[INFO ] [2021-07-25 21:42:14,351] Delete_04: Step 02 - Verify error message displayed
-[INFO ] [2021-07-25 21:42:14,388]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-25 21:42:14,394] Delete_05: Step 01 - Input valid AccountNo with value: 95252
-[INFO ] [2021-07-25 21:42:14,490] Delete_05: Step 02 - Click submit button
-[INFO ] [2021-07-25 21:42:14,566] Delete_05: Step 03 - Select OK alert
-[INFO ] [2021-07-25 21:42:14,577] Delete_05: Step 04 - Verify deleted successful
-[INFO ] [2021-07-25 21:42:14,936]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-25 21:42:14,945] Delete_05: Step 05 - Verify go to manager home page
-[INFO ] [2021-07-25 21:42:15,767]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-25 21:42:15,774] OS name = windows 10
-[INFO ] [2021-07-25 21:42:16,591] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-25 23:03:33,147] Precondition: Click to here link to register
+[INFO ] [2021-07-25 23:03:35,000] Precondition: Input email ID textbox
+[INFO ] [2021-07-25 23:03:35,237] Precondition: Click to submit button
+[INFO ] [2021-07-25 23:03:36,059] Precondition: Get user id to login
+[INFO ] [2021-07-25 23:03:36,128] Precondition: Get password to login
+[INFO ] [2021-07-25 23:03:36,183] Precondition: Open url login page
+[INFO ] [2021-07-25 23:03:37,565] Precondition: Input user ID
+[INFO ] [2021-07-25 23:03:37,697] Precondition: Input password
+[INFO ] [2021-07-25 23:03:37,834] Precondition: Click to login button
+[INFO ] [2021-07-25 23:03:39,143] Precondition: Click to New Customer page
+[INFO ] [2021-07-25 23:03:39,668] Precondition: Create new customer successful
+[INFO ] [2021-07-25 23:03:42,416]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:42,416] Precondition: Get customer ID
+[INFO ] [2021-07-25 23:03:42,464] Precondition: Go to New Account page
+[INFO ] [2021-07-25 23:03:42,892] Precondition: Create new account successful with customerID = 55274
+[INFO ] [2021-07-25 23:03:44,308]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:44,308] Precondition: Get account ID
+[INFO ] [2021-07-25 23:03:44,356] Precondition: Open Edit Account page
+[INFO ] [2021-07-25 23:03:45,163] MiniState_01: Step 01 - Input empty to AccountNo
+[INFO ] [2021-07-25 23:03:45,285] MiniState_01: Step 02 - Press tab key
+[INFO ] [2021-07-25 23:03:45,496] MiniState_01: Step 03 - Verify error message displayed
+[INFO ] [2021-07-25 23:03:45,570]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:45,720] MiniState_02: Step 01 - Input not numberic to AccountNo with value: 123abc
+[INFO ] [2021-07-25 23:03:45,829] MiniState_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 23:03:45,867]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:45,888] MiniState_03: Step 01 - Input special character to AccountNo with value: 123abc@
+[INFO ] [2021-07-25 23:03:46,010] MiniState_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 23:03:46,050]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:46,056] MiniState_04: Step 01 - Input space to AccountNo with value: 1 2 3
+[INFO ] [2021-07-25 23:03:46,164] MiniState_04: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 23:03:46,199]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 23:03:46,203] OS name = windows 10
+[INFO ] [2021-07-25 23:03:47,009] ---------- QUIT BROWSER SUCCESS ----------

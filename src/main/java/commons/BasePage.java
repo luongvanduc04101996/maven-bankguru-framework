@@ -576,11 +576,17 @@ public class BasePage {
 		waitToElementVisible(driver, locator);
 		return getElementText(driver, locator);
 	}
-
+	
 	public String getTextErrorMessageAtTextboxByID(WebDriver driver, String idAttribute) {
 		locator = getDynamicLocator(BasePageUI.DYNAMIC_GET_ERROR_MESSAGE_AT_TEXTBOX, idAttribute);
 		waitToElementVisible(driver, locator);
 		return getElementText(driver, locator);
+	}
+
+	public void pressTabToTextboxByName(WebDriver driver, String nameAttribute) {
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, nameAttribute);
+		waitToElementVisible(driver, locator);
+		sendKeyBoardToElement(driver, locator, Keys.TAB);
 	}
 	
 	private WebDriverWait explicitWait;

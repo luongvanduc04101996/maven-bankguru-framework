@@ -11,13 +11,13 @@ import commons.FakerConfig;
 import commons.PageGeneratorManager;
 import pageObjects.AccountPageObject;
 import pageObjects.CustomerPageObject;
+import pageObjects.CustomizedStatementPageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.ManagerHomePageObject;
-import pageObjects.MiniStatementPageObject;
 import pageObjects.RegisterPageObject;
 
 
-public class Customer_08_Mini_Statement_Form extends BaseTest {
+public class Customer_09_Customized_Statement extends BaseTest {
 	
 	@Parameters({"browser","url"})
 	@BeforeClass
@@ -104,49 +104,87 @@ public class Customer_08_Mini_Statement_Form extends BaseTest {
 		accountID = accountPage.getTextAtUpdatedCustomer(driver, "Account ID");
 		
 		log.info("Precondition: Open Edit Account page");
-		accountPage.openListLinkPageByText(driver, "Mini Statement");
-		miniStatementPage = PageGeneratorManager.getMiniStatementPage(driver);
+		accountPage.openListLinkPageByText(driver, "Customised Statement");
+		customizedStatementPage = PageGeneratorManager.getCustomizedStatementPage(driver);
 	}
 	
 	@Test
-	public void MiniState_01_AccountNo_Cannot_Be_Empty() {
-		log.info("MiniState_01: Step 01 - Input empty to AccountNo");
-		miniStatementPage.inputTextBoxByNameAttribute(driver, "accountno", "");
+	public void CustomizedState_01_AccountNo_Cannot_Be_Empty() {
+		log.info("CustomizedState_01: Step 01 - Input empty to AccountNo");
+		customizedStatementPage.inputTextBoxByNameAttribute(driver, "accountno", "");
 		
-		log.info("MiniState_01: Step 02 - Press tab key");
-		miniStatementPage.pressTabToTextboxByName(driver, "accountno");
+		log.info("CustomizedState_01: Step 02 - Press tab key");
+		customizedStatementPage.pressTabToTextboxByName(driver, "accountno");
 		
-		log.info("MiniState_01: Step 03 - Verify error message displayed");
-		verifyEquals(miniStatementPage.getTextErrorMessageAtTextboxByID(driver, "message2"), "Account Number must not be blank");
+		log.info("CustomizedState_01: Step 03 - Verify error message displayed");
+		verifyEquals(customizedStatementPage.getTextErrorMessageAtTextboxByID(driver, "message2"), "Account Number must not be blank");
 	}
 	
 	@Test
-	public void MiniState_02_AccountNo_Must_Be_Numberic() {
-		log.info("MiniState_02: Step 01 - Input not numberic to AccountNo with value: 123abc");
-		miniStatementPage.inputTextBoxByNameAttribute(driver, "accountno", "123abc");
+	public void CustomizedState_02_AccountNo_Must_Be_Numberic() {
+		log.info("CustomizedState_02: Step 01 - Input not numberic to AccountNo with value: 123abc");
+		customizedStatementPage.inputTextBoxByNameAttribute(driver, "accountno", "123abc");
 		
-		log.info("MiniState_02: Step 02 - Verify error message displayed");
-		verifyEquals(miniStatementPage.getTextErrorMessageAtTextboxByID(driver, "message2"), "Characters are not allowed");
+		log.info("CustomizedState_02: Step 02 - Verify error message displayed");
+		verifyEquals(customizedStatementPage.getTextErrorMessageAtTextboxByID(driver, "message2"), "Characters are not allowed");
 	}
 	
 	@Test
-	public void MiniState_03_AccountNo_Cannot_Have_Special_Character() {
-		log.info("MiniState_03: Step 01 - Input special character to AccountNo with value: 123abc@");
-		miniStatementPage.inputTextBoxByNameAttribute(driver, "accountno", "123abc@");
+	public void CustomizedState_03_AccountNo_Cannot_Have_Special_Character() {
+		log.info("CustomizedState_03: Step 01 - Input special character to AccountNo with value: 123abc@");
+		customizedStatementPage.inputTextBoxByNameAttribute(driver, "accountno", "123abc@");
 		
-		log.info("MiniState_03: Step 02 - Verify error message displayed");
-		verifyEquals(miniStatementPage.getTextErrorMessageAtTextboxByID(driver, "message2"), "Special characters are not allowed");
+		log.info("CustomizedState_03: Step 02 - Verify error message displayed");
+		verifyEquals(customizedStatementPage.getTextErrorMessageAtTextboxByID(driver, "message2"), "Special characters are not allowed");
 	}
 	
 	@Test
-	public void MiniState_04_AccountNo_Cannot_Have_Space() {
-		log.info("MiniState_04: Step 01 - Input space to AccountNo with value: 1 2 3");
-		miniStatementPage.inputTextBoxByNameAttribute(driver, "accountno", "1 2 3");
+	public void CustomizedState_04_AccountNo_Cannot_Have_Space() {
+		log.info("CustomizedState_04: Step 01 - Input space to AccountNo with value: 1 2 3");
+		customizedStatementPage.inputTextBoxByNameAttribute(driver, "accountno", "1 2 3");
 		
-		log.info("MiniState_04: Step 02 - Verify error message displayed");
-		verifyEquals(miniStatementPage.getTextErrorMessageAtTextboxByID(driver, "message2"), "Characters are not allowed");
+		log.info("CustomizedState_04: Step 02 - Verify error message displayed");
+		verifyEquals(customizedStatementPage.getTextErrorMessageAtTextboxByID(driver, "message2"), "Characters are not allowed");
 	}
-
+	
+	@Test
+	public void CustomizedState_05_Minimum_Transaction_Value_Cannot_Be_Empty() {
+		log.info("CustomizedState_05: Step 01 - Input empty to Minimum Transaction Value");
+		customizedStatementPage.inputTextBoxByNameAttribute(driver, "amountlowerlimit", "");
+		
+		log.info("CustomizedState_05: Step 02 - Press tab key");
+		customizedStatementPage.pressTabToTextboxByName(driver, "amountlowerlimit");
+		
+		log.info("CustomizedState_05: Step 03 - Verify error message displayed");
+		verifyEquals(customizedStatementPage.getTextErrorMessageAtTextboxByID(driver, "message12"), "Account Number must not be blank");
+	}
+	
+	@Test
+	public void CustomizedState_06_Minimum_Transaction_Value_Must_Be_Numberic() {
+		log.info("CustomizedState_06: Step 01 - Input not numberic to Minimum Transaction Value with value: 123abc");
+		customizedStatementPage.inputTextBoxByNameAttribute(driver, "amountlowerlimit", "123abc");
+		
+		log.info("CustomizedState_06: Step 02 - Verify error message displayed");
+		verifyEquals(customizedStatementPage.getTextErrorMessageAtTextboxByID(driver, "message12"), "Characters are not allowed");
+	}
+	
+	@Test
+	public void CustomizedState_07_Minimum_Transaction_Value_Cannot_Have_Special_Character() {
+		log.info("CustomizedState_07: Step 01 - Input special character to Minimum Transaction Value with value: 123abc@");
+		customizedStatementPage.inputTextBoxByNameAttribute(driver, "amountlowerlimit", "123abc@");
+		
+		log.info("CustomizedState_07: Step 02 - Verify error message displayed");
+		verifyEquals(customizedStatementPage.getTextErrorMessageAtTextboxByID(driver, "message12"), "Special characters are not allowed");
+	}
+	
+	@Test
+	public void CustomizedState_08_Minimum_Transaction_Value_Cannot_Have_Space() {
+		log.info("CustomizedState_08: Step 01 - Input space to Minimum Transaction Value with value: 1 2 3");
+		customizedStatementPage.inputTextBoxByNameAttribute(driver, "amountlowerlimit", "1 2 3");
+		
+		log.info("CustomizedState_08: Step 02 - Verify error message displayed");
+		verifyEquals(customizedStatementPage.getTextErrorMessageAtTextboxByID(driver, "message12"), "Characters are not allowed");
+	}
 	@AfterClass (alwaysRun = true)
 	public void afterClass() {
 		closeBrowserAndDriver(driver);
@@ -158,7 +196,7 @@ public class Customer_08_Mini_Statement_Form extends BaseTest {
 	ManagerHomePageObject managerHomePage;
 	CustomerPageObject customerPage;
 	AccountPageObject accountPage;
-	MiniStatementPageObject miniStatementPage;
+	CustomizedStatementPageObject customizedStatementPage;
 	String userIDLogin, passwordLogin, emailRegister, name, address, city, state, pin, phone, email, password, birthDay, customerID, gender;
 	String dayBirth, monthBirth, yearBirth,initialDeposit, accountID;
 	FakerConfig fakeData;

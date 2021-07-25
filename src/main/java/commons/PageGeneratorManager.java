@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import pageObjects.AccountPageObject;
 import pageObjects.CustomerPageObject;
+import pageObjects.CustomizedStatementPageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.ManagerHomePageObject;
 import pageObjects.MiniStatementPageObject;
@@ -31,8 +32,12 @@ public class PageGeneratorManager {
 		return new AccountPageObject(driver);
 	}
 	
-	public static MiniStatementPageObject getMiniStatement(WebDriver driver) {
+	public static MiniStatementPageObject getMiniStatementPage(WebDriver driver) {
 		return new MiniStatementPageObject(driver);
+	}
+	
+	public static CustomizedStatementPageObject getCustomizedStatementPage(WebDriver driver) {
+		return new CustomizedStatementPageObject(driver);
 	}
 
 }
