@@ -564,9 +564,21 @@ public class BasePage {
 		waitToElementVisible(driver, locator);
 		return getElementAttribute(driver, locator, attribute);
 	}
-
+	
+	public String getAttributeValueByNameOfTextbox(WebDriver driver, String textName, String attribute) {
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, textName);
+		waitToElementVisible(driver, locator);
+		return getElementAttribute(driver, locator, attribute);
+	}
+	
 	public String getTextAtUpdatedCustomer(WebDriver driver, String textName) {
 		locator = getDynamicLocator(BasePageUI.DYNAMIC_GET_TEXT_AT_UPDATED_CUSTOMER, textName);
+		waitToElementVisible(driver, locator);
+		return getElementText(driver, locator);
+	}
+
+	public String getTextErrorMessageAtTextboxByID(WebDriver driver, String idAttribute) {
+		locator = getDynamicLocator(BasePageUI.DYNAMIC_GET_ERROR_MESSAGE_AT_TEXTBOX, idAttribute);
 		waitToElementVisible(driver, locator);
 		return getElementText(driver, locator);
 	}

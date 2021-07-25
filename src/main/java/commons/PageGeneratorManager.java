@@ -6,6 +6,7 @@ import pageObjects.AccountPageObject;
 import pageObjects.CustomerPageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.ManagerHomePageObject;
+import pageObjects.MiniStatementPageObject;
 import pageObjects.RegisterPageObject;
 
 public class PageGeneratorManager {
@@ -28,6 +29,10 @@ public class PageGeneratorManager {
 	
 	public static AccountPageObject getAccountPage(WebDriver driver) {
 		return new AccountPageObject(driver);
+	}
+	
+	public static MiniStatementPageObject getMiniStatement(WebDriver driver) {
+		return new MiniStatementPageObject(driver);
 	}
 
 }

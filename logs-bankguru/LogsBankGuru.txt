@@ -1,38 +1,40 @@
-[INFO ] [2021-07-24 23:27:21,313] Precondition: Click to here link to register
-[INFO ] [2021-07-24 23:27:23,005] Precondition: Input email ID textbox
-[INFO ] [2021-07-24 23:27:23,236] Precondition: Click to submit button
-[INFO ] [2021-07-24 23:27:24,100] Precondition: Get user id to login
-[INFO ] [2021-07-24 23:27:24,177] Precondition: Get password to login
-[INFO ] [2021-07-24 23:27:24,232] Precondition: Open url login page
-[INFO ] [2021-07-24 23:27:25,708] Precondition: Input user ID
-[INFO ] [2021-07-24 23:27:25,845] Precondition: Input password
-[INFO ] [2021-07-24 23:27:25,965] Precondition: Click to login button
-[INFO ] [2021-07-24 23:27:27,437] Precondition: Click to New Customer page
-[INFO ] [2021-07-24 23:27:27,952] Precondition: Create new customer successful
-[INFO ] [2021-07-24 23:27:30,253]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 23:27:30,418] Delete_01: Step 01 - Open Edit Customer page
-[INFO ] [2021-07-24 23:27:31,042] Delete_01: Step 02 - Input empty to customer id
-[INFO ] [2021-07-24 23:27:31,168] Delete_01: Step 03 - Press tab key
-[INFO ] [2021-07-24 23:27:31,358] Delete_01: Step 04 - Verify error message displayed
-[INFO ] [2021-07-24 23:27:31,412]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 23:27:31,552] Delete_02: Step 01 - Input not numberic to customer id with value: 123abc
-[INFO ] [2021-07-24 23:27:31,673] Delete_02: Step 02 - Verify error message displayed
-[INFO ] [2021-07-24 23:27:31,717]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 23:27:31,739] Delete_03: Step 01 - Input special character to customer id with value: 123abc@
-[INFO ] [2021-07-24 23:27:31,859] Delete_03: Step 02 - Verify error message displayed
-[INFO ] [2021-07-24 23:27:31,895]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 23:27:31,900] Delete_04: Step 01 - Input first character is space to customer id with value:  123
-[INFO ] [2021-07-24 23:27:31,984] Delete_04: Step 02 - Verify error message displayed
-[INFO ] [2021-07-24 23:27:32,019]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 23:27:32,024] Delete_05: Step 01 - Input space to customer id with value: 1 2 3
-[INFO ] [2021-07-24 23:27:32,135] Delete_05: Step 02 - Verify error message displayed
-[INFO ] [2021-07-24 23:27:32,168]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 23:27:32,174] Delete_06: Step 01 - Input valid customer id with value: 69523
-[INFO ] [2021-07-24 23:27:32,256] Delete_06: Step 02 - Click submit button
-[INFO ] [2021-07-24 23:27:32,339] Delete_06: Step 03 - Select OK alert
-[INFO ] [2021-07-24 23:27:32,353] Delete_06: Step 04 - Verify deleted successful
-[INFO ] [2021-07-24 23:27:32,707]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 23:27:32,711] Delete_06: Step 05 - Verify go to manager home page
-[INFO ] [2021-07-24 23:27:33,097]  -------------------------- PASSED -------------------------- 
-[INFO ] [2021-07-24 23:27:33,101] OS name = windows 10
-[INFO ] [2021-07-24 23:27:33,926] ---------- QUIT BROWSER SUCCESS ----------
+[INFO ] [2021-07-25 21:42:01,523] Precondition: Click to here link to register
+[INFO ] [2021-07-25 21:42:03,423] Precondition: Input email ID textbox
+[INFO ] [2021-07-25 21:42:03,617] Precondition: Click to submit button
+[INFO ] [2021-07-25 21:42:04,462] Precondition: Get user id to login
+[INFO ] [2021-07-25 21:42:04,547] Precondition: Get password to login
+[INFO ] [2021-07-25 21:42:04,601] Precondition: Open url login page
+[INFO ] [2021-07-25 21:42:05,751] Precondition: Input user ID
+[INFO ] [2021-07-25 21:42:05,888] Precondition: Input password
+[INFO ] [2021-07-25 21:42:06,014] Precondition: Click to login button
+[INFO ] [2021-07-25 21:42:07,331] Precondition: Click to New Customer page
+[INFO ] [2021-07-25 21:42:07,847] Precondition: Create new customer successful
+[INFO ] [2021-07-25 21:42:10,500]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 21:42:10,500] Precondition: Get customer ID
+[INFO ] [2021-07-25 21:42:10,549] Precondition: Go to New Account page
+[INFO ] [2021-07-25 21:42:10,996] Precondition: Create new account successful with customerID = 69532
+[INFO ] [2021-07-25 21:42:12,383]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 21:42:12,384] Precondition: Get account ID
+[INFO ] [2021-07-25 21:42:12,441] Precondition: Open Edit Account page
+[INFO ] [2021-07-25 21:42:13,316] Delete_01: Step 01 - Input empty to AccountNo
+[INFO ] [2021-07-25 21:42:13,473] Delete_01: Step 02 - Press tab key
+[INFO ] [2021-07-25 21:42:13,673] Delete_01: Step 03 - Verify error message displayed
+[INFO ] [2021-07-25 21:42:13,731]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 21:42:13,881] Delete_02: Step 01 - Input not numberic to AccountNo with value: 123abc
+[INFO ] [2021-07-25 21:42:13,993] Delete_02: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 21:42:14,034]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 21:42:14,056] Delete_03: Step 01 - Input special character to AccountNo with value: 123abc@
+[INFO ] [2021-07-25 21:42:14,175] Delete_03: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 21:42:14,215]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 21:42:14,222] Delete_04: Step 01 - Input space to AccountNo with value: 1 2 3
+[INFO ] [2021-07-25 21:42:14,351] Delete_04: Step 02 - Verify error message displayed
+[INFO ] [2021-07-25 21:42:14,388]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 21:42:14,394] Delete_05: Step 01 - Input valid AccountNo with value: 95252
+[INFO ] [2021-07-25 21:42:14,490] Delete_05: Step 02 - Click submit button
+[INFO ] [2021-07-25 21:42:14,566] Delete_05: Step 03 - Select OK alert
+[INFO ] [2021-07-25 21:42:14,577] Delete_05: Step 04 - Verify deleted successful
+[INFO ] [2021-07-25 21:42:14,936]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 21:42:14,945] Delete_05: Step 05 - Verify go to manager home page
+[INFO ] [2021-07-25 21:42:15,767]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-07-25 21:42:15,774] OS name = windows 10
+[INFO ] [2021-07-25 21:42:16,591] ---------- QUIT BROWSER SUCCESS ----------
